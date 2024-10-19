@@ -1,6 +1,6 @@
 # PlantUML Wrapper
 
-A simple wrapper script to customize the usage of PlantUML.
+A simple wrapper to customize the usage of PlantUML.
 - Exports PlantUML diagrams in **SVG format**.
 - Ensures **UTF-8** encoding during diagram generation.
 
@@ -31,10 +31,14 @@ To make the script callable from terminal, create a folder for your custom scrip
 ### 2. Install the Script
 1. Download the latest plantuml jar file from [the official PlantUML website](http://plantuml.com/download).
 2. Put it in the user executables folder created above.
-3. Place `plantuml.bat` (Windows) or `plantuml.sh` (Linux and MacOS) in the user executables folder created above.
-4. Ensure the script is executable (only for Linux and MacOS):
+3. Search the plantuml executable in the dist folder:
+	- `dist/windows/plantuml.exe` for Windows
+	- `dist/linux/plantuml` for Linux.
+	- `dist/macos/plantuml` for MacOS.
+4. Put the executable in the user executables folder along with the plantuml jar file.
+5. Ensure the program is executable (only for Linux and MacOS):
    ```bash
-   chmod +x ~/bin/plantuml.sh
+   chmod +x ~/bin/plantuml
    ```
 
 ## Usage
